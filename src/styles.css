@@ -2,3 +2,12 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+.Div {
+  width: 50%;
+  border: 1px solid black;
+  text-align: center;
+  padding: 15px;
+  margin: 15px;
+  background-color: blue;
+}

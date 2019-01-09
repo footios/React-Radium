@@ -1,14 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { StyleRoot } from "radium";
 import TryRadium from "./TryRadium";
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <TryRadium />
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <StyleRoot>
+      <div className="App">
+        <TryRadium />
+      </div>
+    </StyleRoot>
   );
 }
 

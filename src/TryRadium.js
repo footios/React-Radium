@@ -1,5 +1,6 @@
 import React from "react";
 import Radium from "radium";
+import "./styles.css";
 
 class TryRadium extends React.Component {
   constructor(props) {
@@ -29,6 +30,19 @@ class TryRadium extends React.Component {
       }
     };
 
+    let linkStyle = {
+      ":hover": {
+        color: "red"
+      }
+    };
+
+    let boxStyle = {
+      "@media (max-width: 500px)": {
+        width: "50px",
+        backgroundColor: "red"
+      }
+    };
+
     let paragraph = "";
     if (this.state.MrBool) {
       paragraph = <p> Hello again </p>;
@@ -48,6 +62,12 @@ class TryRadium extends React.Component {
           toggle hello again
         </button>
         {paragraph}
+        <a style={linkStyle} key="3" href="#">
+          test
+        </a>
+        <div className="Div" key="4" style={boxStyle}>
+          Box
+        </div>
       </div>
     );
   }
