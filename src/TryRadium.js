@@ -6,7 +6,8 @@ function TryRadium() {
     backgroundColor: "green",
     color: "white",
     ":hover": {
-      backgroundColor: "red"
+      backgroundColor: "red",
+      color: "black"
     }
   };
   return (
